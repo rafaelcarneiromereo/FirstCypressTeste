@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Testes Inciais', () =>{
+describe('Meu Primeiro Teste', () =>{
     it('Criar conta', () =>{
         
         cy.visit('https://slidesigreja-ff51f.web.app/login');
@@ -11,9 +11,5 @@ describe('Testes Inciais', () =>{
         cy.get('[id=nome-completo]').type('Rafael Carneiro');
         cy.get('[id=cargo-usuario]').select('Líder de Jovens');
         cy.get('[id=password]').focus().type('{enter}');
-    });
-
-    it('Fazer Login', () =>{
-
-    });
+    });   
 });
